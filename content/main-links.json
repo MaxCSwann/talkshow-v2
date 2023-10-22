@@ -1,0 +1,41 @@
+[
+    {
+        "label": "Listen",
+        "url": "",
+        "internal": false,
+        "children": [
+            {
+                "label": "Spotify",
+                "url": "https://open.spotify.com/artist/6maphvdwLWb9tIeiFAAaE3?si=R7YgeXx6T1ylq4-oqXtezQ"
+            },
+            {
+                "label": "Apple Music",
+                "url": "https://music.apple.com/us/artist/talk-show/350680991"
+            },
+            {
+                "label": "Amazon Music",
+                "url": "https://music.amazon.com/artists/B0B3DN5VXP/talk-show"
+            }
+        ]
+    },
+    {
+        "label": "Shop",
+        "url": "https://talkshow.bigcartel.com/",
+        "internal": false
+    },
+    {
+        "label": "Sign up",
+        "url": "https://landing.mailerlite.com/webforms/landing/u2s8m6",
+        "internal": false
+    },
+    {
+        "label": "Tour",
+        "url": "/tour",
+        "internal": true
+    },
+    {
+        "label": "Watch",
+        "url": "https://www.youtube.com/channel/UCUVxUeg4OlB-rSrhpYq5isA",
+        "internal": false
+    }
+]

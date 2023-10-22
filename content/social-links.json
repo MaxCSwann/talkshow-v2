@@ -1,0 +1,27 @@
+[
+    {
+        "label": "Facebook",
+        "iconName": "ri:facebook-fill",
+        "url": "https://facebook.com/thetalkshowband"
+    },
+    {
+        "label": "Instagram",
+        "iconName": "ri:instagram-line",
+        "url": "https://instagram.com/talkshowtalkshow"
+    },
+    {
+        "label": "X",
+        "iconName": "ri:twitter-x-fill",
+        "url": "https://twitter.com/talkshowband"
+    },
+    {
+        "label": "TikTok",
+        "iconName": "ri:tiktok-fill",
+        "url": "https://www.tiktok.com/@talkshowtalkshow"
+    },
+    {
+        "label": "YouTube",
+        "iconName": "ri:youtube-line",
+        "url": "https://www.youtube.com/channel/UCUVxUeg4OlB-rSrhpYq5isA"
+    }
+]
