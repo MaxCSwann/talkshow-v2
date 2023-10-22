@@ -3,39 +3,47 @@
         "label": "Listen",
         "url": "",
         "internal": false,
+        "iconName": "ri:headphone-line",
         "children": [
             {
                 "label": "Spotify",
-                "url": "https://open.spotify.com/artist/6maphvdwLWb9tIeiFAAaE3?si=R7YgeXx6T1ylq4-oqXtezQ"
+                "url": "https://open.spotify.com/artist/6maphvdwLWb9tIeiFAAaE3?si=R7YgeXx6T1ylq4-oqXtezQ",
+                "iconName": "ri:spotify-fill"
             },
             {
                 "label": "Apple Music",
-                "url": "https://music.apple.com/us/artist/talk-show/350680991"
+                "url": "https://music.apple.com/us/artist/talk-show/350680991",
+                "iconName": "ri:apple-fill"
             },
             {
                 "label": "Amazon Music",
-                "url": "https://music.amazon.com/artists/B0B3DN5VXP/talk-show"
+                "url": "https://music.amazon.com/artists/B0B3DN5VXP/talk-show",
+                "iconName": "ri:amazon-fill"
             }
         ]
     },
     {
         "label": "Shop",
         "url": "https://talkshow.bigcartel.com/",
-        "internal": false
+        "internal": false,
+        "iconName": "ri:shopping-basket-2-line"
     },
     {
         "label": "Sign up",
         "url": "https://landing.mailerlite.com/webforms/landing/u2s8m6",
-        "internal": false
+        "internal": false,
+        "iconName": "ri:mail-line"
     },
     {
         "label": "Tour",
         "url": "/tour",
-        "internal": true
+        "internal": true,
+        "iconName": "ri:global-line"
     },
     {
         "label": "Watch",
         "url": "https://www.youtube.com/channel/UCUVxUeg4OlB-rSrhpYq5isA",
-        "internal": false
+        "internal": false,
+        "iconName": "ri:youtube-line"
     }
 ]

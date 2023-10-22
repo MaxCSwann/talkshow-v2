@@ -1,7 +1,7 @@
 [
     {
         "label": "Facebook",
-        "iconName": "ri:facebook-fill",
+        "iconName": "ri:facebook-box-fill",
         "url": "https://facebook.com/thetalkshowband"
     },
     {
@@ -13,6 +13,11 @@
         "label": "X",
         "iconName": "ri:twitter-x-fill",
         "url": "https://twitter.com/talkshowband"
+    },
+    {
+        "label": "Spotify",
+        "iconName": "ri:spotify-fill",
+        "url": "https://www.youtube.com/channel/UCUVxUeg4OlB-rSrhpYq5isA"
     },
     {
         "label": "TikTok",

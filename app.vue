@@ -1,7 +1,10 @@
 <template>
-    <div class="add-noise bg-zinc-700 text-zinc-50">
+    <!-- <div class="add-noise bg-black text-white">
         <NuxtPage />
-    </div>
+    </div> -->
+    <NuxtLayout>
+        <NuxtPage />
+    </NuxtLayout>
 </template>
 
 <style>
