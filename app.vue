@@ -1,5 +1,5 @@
 <template>
-    <div class="add-noise bg-zinc-950 text-zinc-50">
+    <div class="add-noise bg-zinc-700 text-zinc-50">
         <NuxtPage />
     </div>
 </template>
@@ -18,6 +18,6 @@
         opacity: 1;
         mix-blend-mode: overlay;
         content: "";
-        background: url("img/astro_noise.png");
+        background: url("/img/astro_noise.png");
     }
 </style>
