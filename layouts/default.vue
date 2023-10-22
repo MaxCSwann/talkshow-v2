@@ -6,7 +6,7 @@
             <header>
                 <h1 class="sr-only">Talk Show</h1>
 
-                <NuxtLink to="/" class="mx-auto">
+                <NuxtLink to="/" class="mx-auto flex justify-center">
                     <NuxtImg
                         src="/img/talkshow_logo_small.png"
                         alt="Talk Show Logo"
@@ -22,7 +22,7 @@
             <footer>
                 <ContentQuery path="/social-links">
                     <template #default="{ data }">
-                        <ul class="flex justify-center gap-6">
+                        <ul class="flex justify-center gap-6 flex-wrap">
                             <li
                                 v-for="(social_link, index) of data[0].body"
                                 :key="index"
@@ -35,7 +35,7 @@
                                 >
                                     <Icon
                                         :name="social_link.iconName"
-                                        size="48px"
+                                        class="w-8 h-8 md:w-12 md:h-12"
                                     />
 
                                     <span class="sr-only">

@@ -17,6 +17,7 @@ export default defineNuxtConfig({
     app: {
         head: {
             title: "Talk Show",
+            description: "Talk Show Band",
             meta: [
                 { charset: "utf-8" },
                 {
@@ -37,7 +38,7 @@ export default defineNuxtConfig({
                 {
                     hid: "og-desc",
                     property: "og:description",
-                    content: "Talk show band",
+                    content: "Talk Show band",
                 },
                 {
                     hid: "og-image",
@@ -46,11 +47,6 @@ export default defineNuxtConfig({
                 },
             ],
             link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-            script: [
-                {
-                    src: "https://widget.bandsintown.com/main.min.js",
-                },
-            ],
         },
     },
 });

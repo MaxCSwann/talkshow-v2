@@ -1,7 +1,4 @@
 <template>
-    <!-- <div class="add-noise bg-black text-white">
-        <NuxtPage />
-    </div> -->
     <NuxtLayout>
         <NuxtPage />
     </NuxtLayout>
