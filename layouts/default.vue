@@ -1,5 +1,7 @@
 <template>
-    <div class="background-image add-noise bg-black text-white">
+    <div class="page-container add-noise bg-black text-white">
+        <div class="background-image" aria-hidden="true"></div>
+
         <div
             class="max-w-md layout mx-auto p-6 md:pt-12 md:pb-8 grid grid-rows-[auto_1fr_auto] gap-6"
         >
@@ -65,6 +67,10 @@
 </template>
 
 <style scoped>
+    .page-container {
+        position: relative;
+        isolation: isolate;
+    }
     .layout {
         min-height: 100vh;
 
@@ -74,13 +80,15 @@
     }
 
     .background-image {
+        height: 100%;
+        width: 100%;
         background-image: url("/img/sm-album_cover.jpeg");
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        position: relative;
-        isolation: isolate;
+        position: fixed;
+        z-index: -1;
     }
 
     .background-image::before {
@@ -90,7 +98,6 @@
         height: 100%;
         width: 100%;
         pointer-events: none;
-        background-color: rgb(0 0 0 / 0.5);
-        z-index: -1;
+        background-color: rgb(0 0 0 / 0.6);
     }
 </style>
