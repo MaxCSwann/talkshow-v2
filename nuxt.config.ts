@@ -17,7 +17,6 @@ export default defineNuxtConfig({
     app: {
         head: {
             title: "Talk Show",
-            description: "Talk Show Band",
             meta: [
                 { charset: "utf-8" },
                 {
@@ -39,11 +38,6 @@ export default defineNuxtConfig({
                     hid: "og-desc",
                     property: "og:description",
                     content: "Talk Show band",
-                },
-                {
-                    hid: "og-image",
-                    property: "og:image",
-                    content: `${process.env.BASE_URL}/img/logo_w_grad.png`,
                 },
             ],
             link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],

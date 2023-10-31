@@ -21,3 +21,9 @@
         background: url("/img/astro_noise.png");
     } */
 </style>
+
+<script setup>
+    useSeoMeta({
+        ogImage: "/img/logo_w_grad.png",
+    });
+</script>
