@@ -77,6 +77,8 @@
         background-image: url("/img/sm-album_cover.jpeg");
         background-size: cover;
         background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         position: relative;
         isolation: isolate;
     }
