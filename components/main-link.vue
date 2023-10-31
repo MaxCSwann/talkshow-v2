@@ -5,7 +5,7 @@ import type { Icon } from '#build/components';
             <button
                 type="button"
                 aria-haspopup="true"
-                class="flex py-4 px-8 gap-4 text-left items-center w-full hand-drawn bg-black transition-colors lg:hover:bg-zinc-900 text-xl md:text-3xl add-noise leading-none"
+                class="flex py-4 px-8 gap-4 text-left items-center w-full hand-drawn bg-black transition-colors md:hover:bg-zinc-900 text-xl md:text-3xl add-noise leading-none"
                 :aria-controls="uid"
                 @click="() => (menuOpen = !menuOpen)"
             >
@@ -63,7 +63,7 @@ import type { Icon } from '#build/components';
         v-else-if="url"
         :href="url"
         :target="!internal ? '_blank' : ''"
-        class="flex w-full py-4 px-8 gap-4 hand-drawn transition-colors hover:bg-zinc-900 text-xl md:text-3xl items-center"
+        class="flex w-full py-4 px-8 gap-4 hand-drawn transition-colors md:hover:bg-zinc-900 text-xl md:text-3xl items-center"
         prefetch
     >
         <Icon v-if="iconName?.length" :name="iconName" />
