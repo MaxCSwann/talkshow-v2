@@ -80,15 +80,24 @@
     }
 
     .background-image {
-        height: 100%;
-        width: 100%;
         background-image: url("/img/sm-album_cover.jpeg");
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        width: 100%;
         position: fixed;
         z-index: -1;
+        top: 0px; /* adding px unit also seems to be important for whatever reason, albeit I think we all concur that this should be unitless */
+        left: 0px;
+        bottom: 0px;
+        height: 100vh;
+
+        /* magic mobile viewport iOS bug fix */
+        /* also see: https://css-tricks.com/css-fix-for-100vh-in-mobile-webkit/ */
+        /* also see: https://allthingssmitty.com/2020/05/11/css-fix-for-100vh-in-mobile-webkit/ */
+        height: -webkit-fill-available;
+        -webkit-overflow-scrolling: touch;
     }
 
     .background-image::before {
