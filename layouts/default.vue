@@ -1,7 +1,7 @@
 <template>
     <div class="add-noise bg-black text-white">
         <div
-            class="max-w-md layout mx-auto pt-12 pb-8 px-6 grid grid-rows-[auto_1fr_auto] gap-6"
+            class="max-w-md layout mx-auto p-6 md:pt-12 md:pb-8 grid grid-rows-[auto_1fr_auto] gap-6"
         >
             <header>
                 <h1 class="sr-only">Talk Show</h1>
