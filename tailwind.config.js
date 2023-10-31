@@ -14,7 +14,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['"Cella"', ...defaultTheme.fontFamily.sans],
+                sans: ["Cella", ...defaultTheme.fontFamily.sans],
             },
         },
     },

@@ -4,7 +4,9 @@
 
 @font-face {
     font-family: "Cella";
-    src: url("/fonts/cella/cella.woff") format("woff");
+    src: url("/fonts/cella/Cella.woff2") format("woff2")
+            url("/fonts/cella/Cella.woff") format("woff"),
+        url("/fonts/cella/Cella.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
