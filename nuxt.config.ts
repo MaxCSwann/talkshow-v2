@@ -30,14 +30,14 @@ export default defineNuxtConfig({
                 {
                     hid: "description",
                     name: "description",
-                    content: "my website description",
+                    content: "Talk Show | New album out now!",
                 },
                 { hid: "og-type", property: "og:type", content: "website" },
                 { hid: "og-title", property: "og:title", content: "Talk Show" },
                 {
                     hid: "og-desc",
                     property: "og:description",
-                    content: "Talk Show band",
+                    content: "Talk Show | New album out now!",
                 },
             ],
             link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
