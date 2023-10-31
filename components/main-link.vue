@@ -27,26 +27,35 @@ import type { Icon } from '#build/components';
                 />
             </button>
 
-            <ul
-                class="flex gap-2 flex-col w-full pl-8"
-                role="menu"
-                :id="uid"
-                v-show="menuOpen"
+            <Transition
+                enter-active-class="transition-[max-height] duration-[200ms] ease-in"
+                leave-active-class="transition-[max-height] duration-[150ms] ease-in"
+                enter-from-class="max-h-0"
+                enter-to-class="max-h-[400px]"
+                leave-to-class="max-h-0"
+                leave-from-class="max-h-[400px]"
             >
-                <li
-                    v-for="(child_link, child_index) in children"
-                    :key="child_index"
-                    class="block"
+                <ul
+                    v-if="menuOpen"
+                    class="flex gap-2 flex-col w-full pl-8 overflow-hidden"
+                    role="menu"
+                    :id="uid"
                 >
-                    <main-link
-                        :label="child_link.label"
-                        :url="child_link.url"
-                        :children="child_link.children"
-                        :internal="child_link.internal"
-                        :iconName="child_link.iconName"
-                    />
-                </li>
-            </ul>
+                    <li
+                        v-for="(child_link, child_index) in children"
+                        :key="child_index"
+                        class="block"
+                    >
+                        <main-link
+                            :label="child_link.label"
+                            :url="child_link.url"
+                            :children="child_link.children"
+                            :internal="child_link.internal"
+                            :iconName="child_link.iconName"
+                        />
+                    </li>
+                </ul>
+            </Transition>
         </div>
     </template>
 
