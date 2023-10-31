@@ -1,5 +1,5 @@
 <template>
-    <div class="add-noise bg-black text-white">
+    <div class="background-image add-noise bg-black text-white">
         <div
             class="max-w-md layout mx-auto p-6 md:pt-12 md:pb-8 grid grid-rows-[auto_1fr_auto] gap-6"
         >
@@ -64,7 +64,7 @@
     </div>
 </template>
 
-<style lang="scss" scoped>
+<style scoped>
     .layout {
         min-height: 100vh;
 
@@ -73,19 +73,22 @@
         }
     }
 
-    // .add-noise {
-    //     isolation: isolate;
-    //     position: relative;
-    // }
+    .background-image {
+        background-image: url("/img/sm-album_cover.jpeg");
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        isolation: isolate;
+    }
 
-    // .add-noise::after {
-    //     position: absolute;
-    //     pointer-events: none;
-    //     inset: 0;
-    //     z-index: 20;
-    //     opacity: 1;
-    //     mix-blend-mode: overlay;
-    //     content: "";
-    //     background: url("/img/astro_noise.png");
-    // }
+    .background-image::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+        background-color: rgb(0 0 0 / 0.5);
+        z-index: -1;
+    }
 </style>
