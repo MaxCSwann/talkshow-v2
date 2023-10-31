@@ -1,4 +1,11 @@
 <template>
+    <nav class="pb-2 mx-[10px] mb-4 border-b">
+        <NuxtLink to="/" class="flex gap-2 items-center">
+            <Icon name="ri:arrow-left-line" />
+            <span class="translate-y-1">Back</span>
+        </NuxtLink>
+    </nav>
+
     <section class="flex w-full justify-center">
         <a
             class="bit-widget-initializer"
