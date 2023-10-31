@@ -4,8 +4,8 @@
     </NuxtLayout>
 </template>
 
-<style>
-    .add-noise {
+<style scoped>
+    /* .add-noise {
         isolation: isolate;
         position: relative;
     }
@@ -19,5 +19,5 @@
         mix-blend-mode: overlay;
         content: "";
         background: url("/img/astro_noise.png");
-    }
+    } */
 </style>

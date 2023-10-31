@@ -5,13 +5,15 @@ import type { Icon } from '#build/components';
             <button
                 type="button"
                 aria-haspopup="true"
-                class="flex py-4 px-8 gap-4 text-left items-center w-full hand-drawn bg-black transition-colors hover:bg-zinc-900 text-xl md:text-3xl add-noise"
+                class="flex py-4 px-8 gap-4 text-left items-center w-full hand-drawn bg-black transition-colors lg:hover:bg-zinc-900 text-xl md:text-3xl add-noise leading-none"
                 :aria-controls="uid"
                 @click="() => (menuOpen = !menuOpen)"
             >
                 <Icon v-if="iconName?.length" :name="iconName" />
 
-                {{ label }}
+                <span class="translate-y-1">
+                    {{ label }}
+                </span>
 
                 <Icon
                     name="ri:arrow-down-s-line"
@@ -26,7 +28,7 @@ import type { Icon } from '#build/components';
             </button>
 
             <ul
-                class="flex gap-2 flex-col w-full"
+                class="flex gap-2 flex-col w-full pl-8"
                 role="menu"
                 :id="uid"
                 v-show="menuOpen"
@@ -56,7 +58,10 @@ import type { Icon } from '#build/components';
         prefetch
     >
         <Icon v-if="iconName?.length" :name="iconName" />
-        {{ label }}
+
+        <span class="translate-y-1">
+            {{ label }}
+        </span>
     </NuxtLink>
 </template>
 
@@ -90,13 +95,13 @@ import type { Icon } from '#build/components';
     const menuOpen = ref(false);
 </script>
 
-<style>
+<style scoped>
     .hand-drawn {
         border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
         border: solid 2px white;
         position: relative;
     }
-
+    /* 
     .add-noise {
         isolation: isolate;
         position: relative;
@@ -111,5 +116,5 @@ import type { Icon } from '#build/components';
         mix-blend-mode: overlay;
         content: "";
         background: url("/img/astro_noise.png");
-    }
+    } */
 </style>

@@ -24,9 +24,21 @@
     },
     {
         "label": "Shop",
-        "url": "https://talkshow.bigcartel.com/",
+        "url": "",
         "internal": false,
-        "iconName": "ri:shopping-basket-2-line"
+        "iconName": "ri:shopping-basket-2-line",
+        "children": [
+            {
+                "label": "Vinyl",
+                "url": "https://www.musicglue.com/talk-show-1/",
+                "iconName": "ri:record-circle-fill"
+            },
+            {
+                "label": "Merch",
+                "url": "https://talkshow.bigcartel.com/",
+                "iconName": "ri:t-shirt-fill"
+            }
+        ]
     },
     {
         "label": "Sign up",
