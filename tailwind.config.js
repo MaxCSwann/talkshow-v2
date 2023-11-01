@@ -15,7 +15,7 @@ export default {
         extend: {
             fontFamily: {
                 sans: [
-                    "Cella",
+                    "cellaregular",
                     '"Walter Turncoat"',
                     ...defaultTheme.fontFamily.sans,
                 ],

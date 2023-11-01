@@ -11,7 +11,7 @@ import type { Icon } from '#build/components';
             >
                 <Icon v-if="iconName?.length" :name="iconName" />
 
-                <span class="translate-y-1">
+                <span>
                     {{ label }}
                 </span>
 
@@ -68,7 +68,7 @@ import type { Icon } from '#build/components';
     >
         <Icon v-if="iconName?.length" :name="iconName" />
 
-        <span class="translate-y-1">
+        <span>
             {{ label }}
         </span>
     </NuxtLink>
